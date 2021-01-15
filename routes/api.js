@@ -30,9 +30,13 @@ router.post("/api/workouts", ({ body }, res) => {
 
 // GET workouts
 router.get("/api/workouts", (req, res) => {
-    Workout.find({})
-        .sort({ day: 1 })
-        .then(dbWorkout => {
+    Workout.aggregate([
+        {
+            $set: {
+                totalDuration: {$sum: "$exercises.duration"}
+            }
+        }
+        ]).then(dbWorkout => {
             res.json(dbWorkout);
         })
         .catch(err => {
@@ -44,8 +48,13 @@ router.get("/api/workouts", (req, res) => {
 // GET workouts/range
 //  use agregate 
 router.get("/api/workouts/range", (req, res) => {
-    Workout.find({})
-        .sort({ type: -1 })
+    Workout.find([
+        {
+            $set: {
+                totalDuration: {$sum: "$exercises.duration"}
+            }
+        }
+    ]).sort({day: -1}).limit(7).sort({day:1})
         .then(dbWorkout => {
             res.json(dbWorkout);
         })
