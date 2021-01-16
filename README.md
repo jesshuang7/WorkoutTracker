@@ -1,61 +1,89 @@
-# Unit 17 NoSQL Homework: Workout Tracker
+# WorkoutTracker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+Explore the [Project Page](https://github.com/jesshuang7/WorkoutTracker)
 
-## User Story
+## Table of Contents
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+* [About the Project](#about-the-project)
+  * [User Story](#user-story)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#License)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
-## Business Context
+## About the Project:
+The focus of this project was to create Mongo database with a Mongoose schema and handle routes with Express.
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
 
-## Acceptance Criteria
+![Project Gif](public/assets/WorkoutTracker.gif)
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+### User Story
 
-The user should be able to:
+```
+AS A user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+```
 
-  * Add exercises to the most recent workout plan.
+### Built With:
+* This app is build upon [express](https://expressjs.com/en/5x/api.html), [MongoDB](https://www.mongodb.com/), and [Mongoose](https://mongoosejs.com/).
 
-  * Add new exercises to a new workout plan.
+## Getting Started:
+To get a local copy up and running follow the steps below.
 
-  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+### Prerequisites:
+None.
 
-  * View the total duration of each workout from the past seven workouts on the `stats` page.
+### Installation:
+1. Clone the Repository:
+```sh
+git clone git@github.com:jesshuang7/WorkoutTracker.git
+```
 
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
+## Roadmap:
+Currently no known issues, but track track [open issues](https://github.com/jesshuang7/WorkoutTracker/issues ) for proposed features (and known issues) in the future.
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+## Contributing:
+Any contributions you make are **greatly appreciated**.
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Commit Early and Often
+## License:
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+MIT License
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+Copyright (c) [2020] [Jessica Huang]
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Follow these guidelines for committing:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+## Contact:
+Jessica Huang - tzunuhuang@gmail.com
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+Project Link: [https://github.com/jesshuang7/WorkoutTracker](https://github.com/jesshuang7/WorkoutTracker)
 
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+## Acknowledgements: 
+* University of Washington Coding Bootcamp for providing me with the skills and knowledge to create this project. 
