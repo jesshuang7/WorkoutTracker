@@ -2,6 +2,8 @@
 
 Explore the [Project Page](https://github.com/jesshuang7/WorkoutTracker)
 
+View the [Heroku Deployment](https://afternoon-sierra-95298.herokuapp.com/)
+
 ## Table of Contents
 
 * [About the Project](#about-the-project)
